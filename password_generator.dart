@@ -29,7 +29,7 @@ userInput() {
   }
 }
 
-createEasyPassword() {
+void createEasyPassword() {
   List<int> randomNums = List.generate(8, (index) => Random().nextInt(9));
   String password = "";
   randomNums.forEach((element) {
@@ -41,7 +41,7 @@ createEasyPassword() {
   print("Kripto formasi: $encodedPassword");
 }
 
-createMediumPassword() {
+void createMediumPassword() {
   List<String> randomNums =
       List.generate(8, (index) => Random().nextInt(9).toString());
   List<int> randomLettersCodes =
@@ -64,7 +64,7 @@ createMediumPassword() {
   print("Kripto formasi: $encodedPassword");
 }
 
-createHardPassword() {
+void createHardPassword() {
   List<String> randomNums =
       List.generate(8, (index) => Random().nextInt(9).toString());
   List<int> randomUpperCodes =
