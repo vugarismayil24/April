@@ -5,7 +5,6 @@
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
-import 'dart:typed_data';
 
 void main() {
   print("Hansi seviyyede parol duzeldilsin ?");
@@ -39,6 +38,7 @@ void createEasyPassword() {
   String decodedPassword = utf8.decode(base64Url.decode(encodedPassword));
   print("Sizin shifre: $password");
   print("Kripto formasi: $encodedPassword");
+  print("Sizin shifre: $decodedPassword");
 }
 
 void createMediumPassword() {
@@ -62,6 +62,7 @@ void createMediumPassword() {
   String decodedPassword = utf8.decode(base64Url.decode(encodedPassword));
   print("Sizin shifre: $password");
   print("Kripto formasi: $encodedPassword");
+  print("Sizin shifre: $decodedPassword");
 }
 
 void createHardPassword() {
@@ -95,4 +96,5 @@ void createHardPassword() {
   String decodedPassword = utf8.decode(base64Url.decode(encodedPassword));
   print("Sizin shifre: $password");
   print("Kripto formasi: $encodedPassword");
+  print("Sizin shifre: $decodedPassword");
 }
